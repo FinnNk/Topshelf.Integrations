@@ -83,10 +83,6 @@
     <Reference Include="Ninject">
       <HintPath>..\..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
     </Reference>
-    <Reference Include="Ninject.Extensions.Quartz" Condition="$(TargetFrameworkVersion) == 'v4.5'">
-      <HintPath>..\..\packages\Ninject.Extensions.Quartz.0.2.0.0\lib\net45\Ninject.Extensions.Quartz.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="Ninject.Extensions.Quartz" Condition="$(TargetFrameworkVersion) == 'v4.0'">
       <HintPath>..\..\packages\Ninject.Extensions.Quartz.0.2.0.0\lib\net40\Ninject.Extensions.Quartz.dll</HintPath>
       <Private>True</Private>
@@ -131,6 +127,10 @@
     <None Include="Topshelf.Quartz.Ninject.nuspec" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Ninject.Extensions.Quartz\Source\Ninject.Extensions.Quartz\Ninject.Extensions.Quartz.csproj">
+      <Project>{26e7335d-c92d-4cdf-89b7-dc93ec34bdb5}</Project>
+      <Name>Ninject.Extensions.Quartz</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Topshelf.Ninject\Topshelf.Ninject.csproj">
       <Project>{f26b9ec4-13cf-4093-bd1f-65f9538fd68a}</Project>
       <Name>Topshelf.Ninject</Name>

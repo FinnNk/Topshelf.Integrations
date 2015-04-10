@@ -43,10 +43,6 @@
     <Reference Include="Ninject">
       <HintPath>..\..\packages\Ninject.3.2.2.0\lib\net45-full\Ninject.dll</HintPath>
     </Reference>
-    <Reference Include="Ninject.Extensions.Quartz, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\Ninject.Extensions.Quartz.0.2.0.0\lib\net45\Ninject.Extensions.Quartz.dll</HintPath>
-    </Reference>
     <Reference Include="Quartz">
       <HintPath>..\..\packages\Quartz.2.3.2\lib\net40\Quartz.dll</HintPath>
     </Reference>
