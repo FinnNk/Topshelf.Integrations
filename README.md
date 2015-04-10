@@ -1,4 +1,7 @@
 ## What is it?
+
+This is a fork which updates the Quartz, WebApi and Ninject to the current versions (as of 10.04.2015) and adds StructureMap support.
+
 Topshelf.Integrations is a collection of packages that extend the [Topshelf Project](http://topshelf-project.com). These packages handle the boiler plate code necessary for several use cases that we have found very useful for quickly developing small self contained services on Windows.
 
 These use cases include the following:
@@ -12,8 +15,13 @@ These packages solve these problems by integrating the following technologies wi
 *	[Microsoft WebAPI](http://www.asp.net/web-api) - HTTP/REST Communication
 *	[Quartz.NET](http://quartznet.sourceforge.net/) - Scheduling
 *	[Ninject](http://www.ninject.org/) - IoC Container
+*   [StructureMap](https://github.com/structuremap/structuremap) - IoC Container
 
 ## Getting Started
+
+This fork is not available on NuGet - I'll make a pull request when I've had a chance to test more extensively. For now, checkout the code, play with the samples and reference the dlls or projects in your own projects.
+
+The remaining text refers to the master package (which apart from the NuGet instructions should all still be valid):
 
 These packages are available on [Nuget](http://nuget.org/) and can be used in any combination desired. The Ninject package is directly integrated with Topshelf, and also has accompanying packages for the WebAPI and Quartz.Net projects to make it possible to instantiate ApiControllers via the container and initiate Quartz.NET IJob instances via the container.
 
