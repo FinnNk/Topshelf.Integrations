@@ -23,6 +23,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Topshelf.Quartz.JobA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Topshelf.WebApi", "Samples\Sample.Topshelf.WebApi\Sample.Topshelf.WebApi.csproj", "{022EF609-B8F4-4808-8027-582E7ACCBAA4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topshelf.StructureMap", "Source\Topshelf.Structuremap\Topshelf.StructureMap.csproj", "{26E2DBDA-3E90-408D-88AF-6250B5C01FA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topshelf.WebApi.StructureMap", "Source\Topshelf.WebApi.StructureMap\Topshelf.WebApi.StructureMap.csproj", "{34D30FC4-E73D-4436-A499-122A2F2D3B06}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Topshelf.WebApi.StructureMap", "Samples\Sample.Topshelf.WebApi.StructureMap\Sample.Topshelf.WebApi.StructureMap.csproj", "{78D38A0B-8373-4FCB-AB80-892C78E36251}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -108,6 +114,36 @@ Global
 		{022EF609-B8F4-4808-8027-582E7ACCBAA4}.Release 4.5|Any CPU.ActiveCfg = Release|Any CPU
 		{022EF609-B8F4-4808-8027-582E7ACCBAA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{022EF609-B8F4-4808-8027-582E7ACCBAA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26E2DBDA-3E90-408D-88AF-6250B5C01FA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26E2DBDA-3E90-408D-88AF-6250B5C01FA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26E2DBDA-3E90-408D-88AF-6250B5C01FA8}.Release 3.5|Any CPU.ActiveCfg = Release|Any CPU
+		{26E2DBDA-3E90-408D-88AF-6250B5C01FA8}.Release 3.5|Any CPU.Build.0 = Release|Any CPU
+		{26E2DBDA-3E90-408D-88AF-6250B5C01FA8}.Release 4.0|Any CPU.ActiveCfg = Release|Any CPU
+		{26E2DBDA-3E90-408D-88AF-6250B5C01FA8}.Release 4.0|Any CPU.Build.0 = Release|Any CPU
+		{26E2DBDA-3E90-408D-88AF-6250B5C01FA8}.Release 4.5|Any CPU.ActiveCfg = Release|Any CPU
+		{26E2DBDA-3E90-408D-88AF-6250B5C01FA8}.Release 4.5|Any CPU.Build.0 = Release|Any CPU
+		{26E2DBDA-3E90-408D-88AF-6250B5C01FA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26E2DBDA-3E90-408D-88AF-6250B5C01FA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34D30FC4-E73D-4436-A499-122A2F2D3B06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34D30FC4-E73D-4436-A499-122A2F2D3B06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34D30FC4-E73D-4436-A499-122A2F2D3B06}.Release 3.5|Any CPU.ActiveCfg = Release|Any CPU
+		{34D30FC4-E73D-4436-A499-122A2F2D3B06}.Release 3.5|Any CPU.Build.0 = Release|Any CPU
+		{34D30FC4-E73D-4436-A499-122A2F2D3B06}.Release 4.0|Any CPU.ActiveCfg = Release|Any CPU
+		{34D30FC4-E73D-4436-A499-122A2F2D3B06}.Release 4.0|Any CPU.Build.0 = Release|Any CPU
+		{34D30FC4-E73D-4436-A499-122A2F2D3B06}.Release 4.5|Any CPU.ActiveCfg = Release|Any CPU
+		{34D30FC4-E73D-4436-A499-122A2F2D3B06}.Release 4.5|Any CPU.Build.0 = Release|Any CPU
+		{34D30FC4-E73D-4436-A499-122A2F2D3B06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34D30FC4-E73D-4436-A499-122A2F2D3B06}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78D38A0B-8373-4FCB-AB80-892C78E36251}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78D38A0B-8373-4FCB-AB80-892C78E36251}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78D38A0B-8373-4FCB-AB80-892C78E36251}.Release 3.5|Any CPU.ActiveCfg = Release|Any CPU
+		{78D38A0B-8373-4FCB-AB80-892C78E36251}.Release 3.5|Any CPU.Build.0 = Release|Any CPU
+		{78D38A0B-8373-4FCB-AB80-892C78E36251}.Release 4.0|Any CPU.ActiveCfg = Release|Any CPU
+		{78D38A0B-8373-4FCB-AB80-892C78E36251}.Release 4.0|Any CPU.Build.0 = Release|Any CPU
+		{78D38A0B-8373-4FCB-AB80-892C78E36251}.Release 4.5|Any CPU.ActiveCfg = Release|Any CPU
+		{78D38A0B-8373-4FCB-AB80-892C78E36251}.Release 4.5|Any CPU.Build.0 = Release|Any CPU
+		{78D38A0B-8373-4FCB-AB80-892C78E36251}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78D38A0B-8373-4FCB-AB80-892C78E36251}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -117,5 +153,6 @@ Global
 		{A2252EE8-D2D9-4F81-B1C6-A7E2D03EF314} = {1964C84C-7159-4FEE-88EA-BEE1C45FF32A}
 		{AC43A2CC-AAA6-4EB8-97D3-9A7322663489} = {1964C84C-7159-4FEE-88EA-BEE1C45FF32A}
 		{022EF609-B8F4-4808-8027-582E7ACCBAA4} = {1964C84C-7159-4FEE-88EA-BEE1C45FF32A}
+		{78D38A0B-8373-4FCB-AB80-892C78E36251} = {1964C84C-7159-4FEE-88EA-BEE1C45FF32A}
 	EndGlobalSection
 EndGlobal
