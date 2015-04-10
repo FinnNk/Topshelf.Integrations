@@ -31,7 +31,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release 3.5|AnyCPU'">
     <OutputPath>bin\Release\net35\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
@@ -42,7 +41,6 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release 4.0|AnyCPU'">
     <OutputPath>bin\Release\net40\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
@@ -53,7 +51,6 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
   </PropertyGroup>
-
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release 4.5|AnyCPU'">
     <OutputPath>bin\Release\net45\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
@@ -65,19 +62,17 @@
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <ItemGroup>
-    
-    <Reference Include="Common.Logging" Condition="$(TargetFrameworkVersion) == 'v4.5'">
-      <HintPath>..\..\packages\Common.Logging.2.1.2\lib\net40\Common.Logging.dll</HintPath>
-    </Reference>
     <Reference Include="Common.Logging" Condition="$(TargetFrameworkVersion) == 'v4.0'">
       <HintPath>..\..\packages\Common.Logging.2.1.2\lib\net40\Common.Logging.dll</HintPath>
     </Reference>
     <Reference Include="Common.Logging" Condition="$(TargetFrameworkVersion) == 'v3.5'">
       <HintPath>..\..\packages\Common.Logging.2.1.2\lib\net35\Common.Logging.dll</HintPath>
     </Reference>
-    
-    <Reference Include="Quartz" Condition="$(TargetFrameworkVersion) == 'v4.5'">
-      <HintPath>..\..\packages\Quartz.2.1.2\lib\net40\Quartz.dll</HintPath>
+    <Reference Include="Common.Logging">
+      <HintPath>..\..\packages\Common.Logging.3.1.0\lib\net40\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core">
+      <HintPath>..\..\packages\Common.Logging.Core.3.1.0\lib\net40\Common.Logging.Core.dll</HintPath>
     </Reference>
     <Reference Include="Quartz" Condition="$(TargetFrameworkVersion) == 'v4.0'">
       <HintPath>..\..\packages\Quartz.2.1.2\lib\net40\Quartz.dll</HintPath>
@@ -85,7 +80,9 @@
     <Reference Include="Quartz" Condition="$(TargetFrameworkVersion) == 'v3.5'">
       <HintPath>..\..\packages\Quartz.2.1.2\lib\net35\Quartz.dll</HintPath>
     </Reference>
-    
+    <Reference Include="Quartz">
+      <HintPath>..\..\packages\Quartz.2.3.2\lib\net40\Quartz.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -93,20 +90,9 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    
-    <Reference Include="Topshelf, Version=3.1.107.0, Culture=neutral, PublicKeyToken=b800c4cfcdeea87b, processorArchitecture=MSIL" Condition="$(TargetFrameworkVersion) == 'v4.5'">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\TopShelf.3.1.1\lib\net40-full\Topshelf.dll</HintPath>
+    <Reference Include="Topshelf">
+      <HintPath>..\..\packages\Topshelf.3.1.4\lib\net40-full\Topshelf.dll</HintPath>
     </Reference>
-    <Reference Include="Topshelf, Version=3.1.107.0, Culture=neutral, PublicKeyToken=b800c4cfcdeea87b, processorArchitecture=MSIL" Condition="$(TargetFrameworkVersion) == 'v4.0'">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\TopShelf.3.1.1\lib\net40-full\Topshelf.dll</HintPath>
-    </Reference>
-    <Reference Include="Topshelf, Version=3.1.107.0, Culture=neutral, PublicKeyToken=b800c4cfcdeea87b, processorArchitecture=MSIL" Condition="$(TargetFrameworkVersion) == 'v3.5'">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\packages\TopShelf.3.1.1\lib\net35\Topshelf.dll</HintPath>
-    </Reference>
-  
   </ItemGroup>
   <ItemGroup>
     <Compile Include="NullService.cs" />
@@ -116,6 +102,10 @@
     <Compile Include="SchedulejobServiceConfiguratorExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
+    <None Include="job_scheduling_data_2_0.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
