@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Topshelf.Quartz.StructureMa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ninject.Extensions.Quartz", "Source\Ninject.Extensions.Quartz\Ninject.Extensions.Quartz.csproj", "{26E7335D-C92D-4CDF-89B7-DC93EC34BDB5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample.Topshelf.Quartz.StructureMap.JobAsService", "Samples\Sample.Topshelf.Quartz.StructureMap.JobAsService\Sample.Topshelf.Quartz.StructureMap.JobAsService.csproj", "{79D60FC5-21DE-40A7-B342-132AC7ECF647}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -168,6 +170,16 @@ Global
 		{26E7335D-C92D-4CDF-89B7-DC93EC34BDB5}.Release 4.5|Any CPU.Build.0 = Release 4.5|Any CPU
 		{26E7335D-C92D-4CDF-89B7-DC93EC34BDB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{26E7335D-C92D-4CDF-89B7-DC93EC34BDB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79D60FC5-21DE-40A7-B342-132AC7ECF647}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79D60FC5-21DE-40A7-B342-132AC7ECF647}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79D60FC5-21DE-40A7-B342-132AC7ECF647}.Release 3.5|Any CPU.ActiveCfg = Release|Any CPU
+		{79D60FC5-21DE-40A7-B342-132AC7ECF647}.Release 3.5|Any CPU.Build.0 = Release|Any CPU
+		{79D60FC5-21DE-40A7-B342-132AC7ECF647}.Release 4.0|Any CPU.ActiveCfg = Release|Any CPU
+		{79D60FC5-21DE-40A7-B342-132AC7ECF647}.Release 4.0|Any CPU.Build.0 = Release|Any CPU
+		{79D60FC5-21DE-40A7-B342-132AC7ECF647}.Release 4.5|Any CPU.ActiveCfg = Release|Any CPU
+		{79D60FC5-21DE-40A7-B342-132AC7ECF647}.Release 4.5|Any CPU.Build.0 = Release|Any CPU
+		{79D60FC5-21DE-40A7-B342-132AC7ECF647}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79D60FC5-21DE-40A7-B342-132AC7ECF647}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -178,5 +190,6 @@ Global
 		{AC43A2CC-AAA6-4EB8-97D3-9A7322663489} = {1964C84C-7159-4FEE-88EA-BEE1C45FF32A}
 		{022EF609-B8F4-4808-8027-582E7ACCBAA4} = {1964C84C-7159-4FEE-88EA-BEE1C45FF32A}
 		{78D38A0B-8373-4FCB-AB80-892C78E36251} = {1964C84C-7159-4FEE-88EA-BEE1C45FF32A}
+		{79D60FC5-21DE-40A7-B342-132AC7ECF647} = {1964C84C-7159-4FEE-88EA-BEE1C45FF32A}
 	EndGlobalSection
 EndGlobal

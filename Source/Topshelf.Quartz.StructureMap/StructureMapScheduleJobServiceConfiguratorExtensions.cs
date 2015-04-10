@@ -1,7 +1,7 @@
 ﻿using System;
 using Quartz;
-using StructureMap;
 using Topshelf.Logging;
+using Topshelf.Quartz.StructureMap.QuartzFactories;
 using Topshelf.ServiceConfigurators;
 using Topshelf.StructureMap;
 
@@ -27,6 +27,8 @@ namespace Topshelf.Quartz.StructureMap
             {
                 throw new Exception("You must call UseStructureMap() to use the Quartz Topshelf StructureMap integration.");
             }
+
+            container.Configure(ctx => ctx.AddRegistry(new QuartzRegistry()));
 
             Func<IScheduler> schedulerFactory = () => container.GetInstance<IScheduler>();
 
